@@ -1,6 +1,40 @@
-# My Knot
+# My Knot — My Knowledge Over Time
 
-After a long time, I thought I could gather the knowledge I already had, along with what I gain through daily programming tasks, into one concise place.  
-I named this repository **My Knot**, which stands for ***My Kn*owledge *O*ver *T*ime**.
+A personal learning vault. Claude Code builds the projects; this vault is where I make sure I actually understand them.
 
-This repository will gradually be completed over time, so I can review it whenever I want,  and maybe it will be useful for someone else too.
+**Core rule: Claude generates less, I retrieve more.** I explain first, Claude corrects. Notes stay short.
+
+## Structure
+
+| Folder | What goes there |
+|---|---|
+| `00-Target/` | My resume claims and the proof test for each one |
+| `Concepts/` | One short note per concept, linked with `[[wikilinks]]` |
+| `Sessions/` | One short log per work session: what was built, why, which concepts |
+| `Mistakes/` | Bugs and mistakes, mine or Claude's, and how to spot them next time |
+| `Projects/` | One note per project: what it is teaching me |
+| `templates/` | Note templates the skills follow |
+| `skills/` | Claude Code skills (`/lesson`, `/check`, `/defend`), symlinked into `~/.claude/skills/` |
+
+## Concept status
+
+`unknown → explained → reproduced → defended`
+
+- **explained**: I explained it in my own words during `/lesson` and it was essentially right.
+- **reproduced**: I did the exercise without AI and `/check` reviewed it.
+- **defended**: I passed a `/defend` mock interview on it.
+
+Claude never raises a status on its own. It proposes, I confirm.
+
+## Routine
+
+- **End of each work session:** `/lesson`
+- **Daily, ~15 min:** flashcard review (Spaced Repetition plugin)
+- **Weekly:** one exercise without AI → `/check`
+- **Weekly:** one `/defend` on a resume claim
+
+## Setup
+
+1. Run `./install.sh` once to link the skills.
+2. Open this folder as a vault in Obsidian.
+3. Install the community plugins **Spaced Repetition** and **Dataview**.
