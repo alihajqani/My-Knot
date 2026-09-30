@@ -30,3 +30,4 @@ started: 2026-09-28
 ## Log
 
 Sessions are linked here automatically by `/lesson`.
+- [[Sessions/2026-09-29-billboard-profiler]] — Stage 1: schema design Q1–Q18, client clarification (cultural posters)
